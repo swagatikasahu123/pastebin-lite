@@ -1,6 +1,6 @@
 # Pastebin-Lite
 
-## 📌 Project Description
+##  Project Description
 
 Pastebin-Lite is a simple backend-focused web application that allows users to create text pastes and share them via a unique URL. Each paste can optionally expire after a certain amount of time (TTL) or after a limited number of views. Once a paste expires or exceeds its view limit, it becomes permanently unavailable.
 
@@ -8,7 +8,7 @@ This project is designed to demonstrate clean API design, correct backend logic,
 
 ---
 
-## 🚀 Features
+##  Features
 
 * Create a text paste
 * Receive a shareable URL for the paste
@@ -21,7 +21,7 @@ This project is designed to demonstrate clean API design, correct backend logic,
 
 ---
 
-## 🧱 Technology Stack
+##  Technology Stack
 
 * **Backend:** Node.js, Express.js
 * **Database:** MongoDB (using Mongoose)
@@ -30,7 +30,7 @@ This project is designed to demonstrate clean API design, correct backend logic,
 
 ---
 
-## 🛣️ API Endpoints
+##  API Endpoints
 
 ### Health Check
 
@@ -105,7 +105,7 @@ GET /p/:id
 
 ---
 
-## ⏱️ Deterministic Time for Testing
+##  Deterministic Time for Testing
 
 To support automated testing:
 
@@ -115,13 +115,13 @@ To support automated testing:
 
 ---
 
-## 💾 Persistence Layer
+##  Persistence Layer
 
 The application uses **MongoDB** as a persistent data store. This ensures that pastes survive across requests and server restarts, which is required for serverless and cloud deployments. No in-memory storage is used.
 
 ---
 
-## ▶️ How to Run Locally
+##  How to Run Locally
 
 ### Prerequisites
 
@@ -155,7 +155,7 @@ http://localhost:5000
 
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 Example `.env.example`:
 
@@ -167,7 +167,7 @@ TEST_MODE=0
 
 ---
 
-## 🧠 Important Design Decisions
+##  Important Design Decisions
 
 * MongoDB is used instead of in-memory storage to ensure persistence
 * TTL logic is handled in application code (not MongoDB TTL indexes) to support deterministic testing
@@ -176,6 +176,6 @@ TEST_MODE=0
 
 ---
 
-## ✅ Status
+##  Status
 
 This project fully satisfies all functional, technical, and repository-level requirements of the Pastebin-Lite take-home assignment and is ready for deployment and submission.
